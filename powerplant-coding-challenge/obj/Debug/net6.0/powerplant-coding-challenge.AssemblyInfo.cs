@@ -10,6 +10,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("6b52d47b-8622-49dd-98dc-4810a359972a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("powerplant-coding-challenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

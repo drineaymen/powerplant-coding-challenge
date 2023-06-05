@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  powerplant-coding-challenge:
+    container_name: powerplant-coding-challenge
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "powerplant-coding-challenge"
+    volumes:
+      - /Users/macbookair/vsdbg/vs2017u5:/remote_debugger:rw
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/powerplant-coding-challenge.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "powerplant-coding-challenge"
+    tty: true

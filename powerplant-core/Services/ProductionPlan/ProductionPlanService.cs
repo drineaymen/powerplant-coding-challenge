@@ -12,11 +12,11 @@ namespace powerplant.core.Services.ProductionPlan
         private decimal PowerLoadLeft = 0;
 
         /// <summary>
-        /// 
+        /// Determine whitch power plant should run and how much power it should generate
         /// </summary>
-        /// <param name="productionPlanInput"></param>
-        /// <returns></returns>
-        /// <exception cref="InvalidDataException"></exception>
+        /// <param name="productionPlanInput">The production power plant input</param>
+        /// <returns>A list of production plan dtos</returns>
+        /// <exception cref="InvalidDataException">Throws invalid data exception when the is no powerplant in request</exception>
         public IList<ProductionPlanDto> CalculateProductionPower(ProductionPlanInput productionPlanInput)
         {
             if (!productionPlanInput.PowerPlants.Any())
@@ -29,24 +29,24 @@ namespace powerplant.core.Services.ProductionPlan
             var productionPlants = CalculateMeritCostProduction(productionPlanInput);
 
             return productionPlants.Select(pp =>
-            {
-                var plant = CalculateRealProduction(pp, productionPlanInput.Fuels);
+               {
+                   var plant = CalculateRealProduction(pp, productionPlanInput.Fuels);
 
-                return new ProductionPlanDto()
-                {
-                    Name = pp.Name,
-                    P = plant.Production
-                };
-            })
-                .ToList();
+                   return new ProductionPlanDto()
+                   {
+                       Name = pp.Name,
+                       P = plant.Production
+                   };
+               })
+                   .ToList();
         }
 
         /// <summary>
-        /// 
+        /// Calculate how much power should a power plant produce
         /// </summary>
-        /// <param name="plant"></param>
-        /// <param name="fuels"></param>
-        /// <returns></returns>
+        /// <param name="plant">The power plant</param>
+        /// <param name="fuels">All fuels sended in the request</param>
+        /// <returns>The updated power plant</returns>
         private PowerPlant CalculateRealProduction(PowerPlant plant, Fuel fuels)
         {
             if (PowerLoadLeft <= 0)
@@ -82,20 +82,23 @@ namespace powerplant.core.Services.ProductionPlan
                         if (productionPlanInput.Fuels.Kerosine > 0)
                         {
                             plant.Cost = (plant.PMax * productionPlanInput.Fuels.Kerosine) * plant.Efficiency;
-                            plant.MeritOrder = plant.PMax - plant.Cost;
+                            plant.MeritOrder = (plant.Cost - plant.PMax) * plant.Efficiency;
                         }
                         break;
                     case PowerType.GasFired:
                         if (productionPlanInput.Fuels.Gas > 0)
                         {
-                            plant.Cost = (plant.PMax * productionPlanInput.Fuels.Gas) * plant.Efficiency;
-                            plant.MeritOrder = plant.PMax - plant.Cost;
+                            plant.Cost = ((plant.PMax * productionPlanInput.Fuels.Gas) * plant.Efficiency)
+                                + ((plant.PMax * 0.3M) * productionPlanInput.Fuels.Co2);
+                            plant.MeritOrder = (plant.Cost - plant.PMax) * plant.Efficiency;
                         }
                         break;
                 }
             }
 
-            return productionPlanInput.PowerPlants.OrderBy(pp => pp.MeritOrder).ToList();
+            return productionPlanInput.PowerPlants
+                .OrderBy(pp => pp.MeritOrder)
+                .ToList();
         }
     }
 }
