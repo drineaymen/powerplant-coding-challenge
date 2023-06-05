@@ -1,0 +1,27 @@
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{C48EB9DE-58C4-45EE-B142-04B2FD072430}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/Services/ProductionPlan/ProductionPlanService.cs" relfile="powerplant-core/Services/ProductionPlan/ProductionPlanService.cs" line="31" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="powerplant-coding-challenge/Controllers/ProductionPlanController.cs">
+    <Files>
+      <File FileName="powerplant-coding-challenge/Controllers/ProductionPlanController.cs" Line="18" Column="58" />
+      <File FileName="powerplant-coding-challenge/Middlewares/ExceptionLoggerMiddleware.cs" Line="45" Column="1" />
+      <File FileName="powerplant-core/Services/IProductionPlanService.cs" Line="8" Column="10" />
+      <File FileName="powerplant-core/Services/ProductionPlan/ProductionPlanService.cs" Line="8" Column="97" />
+      <File FileName="powerplant-core/Constants/PowerType.cs" Line="10" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="powerplant-coding-challenge " expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.powerplant-coding-challenge PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

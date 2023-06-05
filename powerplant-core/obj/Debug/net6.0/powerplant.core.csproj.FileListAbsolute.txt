@@ -1,0 +1,12 @@
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/bin/Debug/net6.0/powerplant.core.deps.json
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/bin/Debug/net6.0/powerplant.core.dll
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/bin/Debug/net6.0/powerplant.core.pdb
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/powerplant.core.csproj.AssemblyReference.cache
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/powerplant.core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/powerplant.core.AssemblyInfoInputs.cache
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/powerplant.core.AssemblyInfo.cs
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/powerplant.core.csproj.CoreCompileInputs.cache
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/powerplant.core.dll
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/refint/powerplant.core.dll
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/powerplant.core.pdb
+/Users/macbookair/Projects/powerplant-coding-challenge/powerplant-coding-challenge/powerplant-core/obj/Debug/net6.0/ref/powerplant.core.dll
