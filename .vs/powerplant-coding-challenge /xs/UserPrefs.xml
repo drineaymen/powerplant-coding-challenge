@@ -1,0 +1,35 @@
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{C48EB9DE-58C4-45EE-B142-04B2FD072430}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="powerplant-core/Services/ProductionPlan/ProductionPlanService.cs">
+    <Files>
+      <File FileName="powerplant-coding-challenge/Controllers/ProductionPlanController.cs" Line="23" Column="1" />
+      <File FileName="powerplant-core/Services/ProductionPlan/ProductionPlanService.cs" Line="86" Column="26" />
+      <File FileName="README.md" Line="13" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="powerplant-coding-challenge " expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="powerplant-coding-challenge" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+            <Node name="powerplant.core" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="ProductionPlan" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.powerplant-coding-challenge PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
